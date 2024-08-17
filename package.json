@@ -1,12 +1,12 @@
 {
-	"name": "create-typescript-package",
-	"description": "A template project for developing & publishing TypeScript packages",
+	"name": "zod-lite",
+	"description": "A lite schema validator inspired by Zod",
 	"version": "0.0.0",
-	"author": "StyleShit",
+	"author": "Ido Bouskila",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/StyleShit/create-typescript-package"
+		"url": "https://github.com/IdoBouskila/zod-lite"
 	},
 	"type": "module",
 	"main": "dist/index.cjs",
