@@ -1,5 +1,13 @@
 import { throwSizeError, throwTypeError } from './validationExceptions';
 
+export const ensureObject = (value: unknown): Record<string, any> => {
+    if (typeof value === "object" && ! Array.isArray(value) && value !== null) {
+        return value;
+    }
+    
+    return throwTypeError(value, 'object');
+};
+
 export const ensureNumber = (value: unknown): number => {
 	if (typeof value !== 'number') {
 		return throwTypeError(value, 'number');
