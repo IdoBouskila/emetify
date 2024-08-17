@@ -28,6 +28,8 @@ export default tseslint.config(
 	{
 		rules: {
 			'no-console': 'error',
+			// we need to use any for some cases
+			'@typescript-eslint/no-explicit-any': 'off',
 		},
 	},
 );
