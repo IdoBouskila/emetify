@@ -1,5 +1,5 @@
 {
-	"name": "@IdoBouskila/zod-lite",
+	"name": "@idobouskila/zod-lite",
 	"description": "A lite schema validator inspired by Zod",
 	"version": "0.0.0",
 	"author": "Ido Bouskila",
