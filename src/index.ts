@@ -28,7 +28,7 @@ const initilizeZodType = <T>(initialParser: (value: unknown) => T) => {
 
 }
 
-const i = {
+const e = {
 	object: <T extends Record<string, ZodAny<any>>>(schema: T) => {
 		type ParsedSchema = ReadableObjectType<{
 			[K in keyof T]: ReturnType<T[K]['parse']>
@@ -102,4 +102,4 @@ const i = {
 	},
 };
 
-export default i;
+export default e;
