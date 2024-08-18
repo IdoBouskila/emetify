@@ -1,6 +1,6 @@
 # Emetify
-Emetify (Emet + verify 😉) is a type-safe schema validator inspired by zod [Zod](https://github.com/colinhacks/zod).\
-The library has only the core features of Zod, becasue it written for learning purposes.
+Emetify (Emet + verify 😉) is a type-safe schema validator inspired by [Zod](https://github.com/colinhacks/zod).\
+Since it's written for learning, it only has the core features of Zod.
 
 ## Installation
 
