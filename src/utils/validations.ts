@@ -33,9 +33,7 @@ export const ensureStringLength = ({ value, requiredLength, validationType }: {
 
 	const isValidLength = isMinimum
 		? requiredLength <= value.length
-		: requiredLength >= value.length
-
-	
+		: requiredLength >= value.length;
 		
 	if (! isValidLength) {
 		throwSizeError({
@@ -57,9 +55,7 @@ export const ensureNumberSize = ({ value, requiredSize, validationType }: {
 
 	const isValidLength = isMinimum
 		? requiredSize <= value
-		: requiredSize >= value
-
-	
+		: requiredSize >= value;
 		
 	if (! isValidLength) {
 		throwSizeError({

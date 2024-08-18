@@ -1,13 +1,3 @@
-export const throwTypeError = (value: unknown, expectedType: string) => {
-	const error = {
-		code: 'invalid_type',
-		expected: expectedType,
-		message: `Expected ${expectedType}, received ${ typeof value }`,
-	};
-
-	throw new Error(JSON.stringify(error));
-};
-
 export const throwSizeError = ({ type, validationType, requiredLength }: {
 	requiredLength: number;
 	type: 'string' | 'number';
@@ -27,3 +17,13 @@ export const throwSizeError = ({ type, validationType, requiredLength }: {
 	
 	throw new Error(JSON.stringify(error));
 }
+
+export const throwTypeError = (value: unknown, expectedType: string) => {
+	const error = {
+		code: 'invalid_type',
+		expected: expectedType,
+		message: `Expected ${expectedType}, received ${ typeof value }`,
+	};
+
+	throw new Error(JSON.stringify(error));
+};
