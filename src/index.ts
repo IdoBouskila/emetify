@@ -2,7 +2,7 @@
 import type { ReadableObjectType } from './utils/types';
 import { ensureNumber, ensureString, ensureNumberSize, ensureStringLength, ensureObject } from './validations';
 
-type AnySchemaObject<TReturn> = {
+type ZodAny<TReturn> = {
 	parse: (value: unknown) => TReturn;
 } & Record<string, any>;
 
