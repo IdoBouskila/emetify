@@ -7,7 +7,7 @@ Since it's written for learning, it only has the core features of Zod.
 To install, simply run the following command:
 
 ```bash
-npm install @emetify
+npm install emetify
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install @emetify
 Here's a quick example of the usage:
 
 ```typescript
-const { e } from '@emetify';
+const { e } from 'emetify';
 
 const schema = e.object({
     name: e.string().min(3).max(20),
