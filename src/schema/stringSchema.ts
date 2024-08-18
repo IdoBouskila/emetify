@@ -7,18 +7,18 @@ function stringSchema() {
     return {
         parse,
         min: function (requiredLength: number) {
-            registerParser((value: unknown) => ensureStringLength({
+            registerParser((value) => ensureStringLength({
+                value: value,
                 requiredLength,
-                value: value as string,
                 validationType: 'min',
             }));
 
             return this;
         },
         max: function (requiredLength: number) {
-            registerParser((value: unknown) => ensureStringLength({
+            registerParser((value) => ensureStringLength({
+                value: value,
                 requiredLength,
-                value: value as string,
                 validationType: 'max',
             }));
 

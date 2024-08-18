@@ -2,23 +2,24 @@ import initializeParsers from './utils/initializeParsers';
 import { ensureNumber, ensureNumberSize } from '../utils/validations';
 
 function numberSchema() {
-    const { parse, registerParser } = initializeParsers<number>(ensureNumber);
+    const { parse, safeParse, registerParser } = initializeParsers<number>(ensureNumber);
 
     return {
         parse,
+        safeParse,
         min: function (requiredSize: number) {
-            registerParser((value: unknown) => ensureNumberSize({
+            registerParser((value) => ensureNumberSize({
                 requiredSize,
-                value: value as number,
+                value: value,
                 validationType: 'min',
             }));
 
             return this;
         },
         max: function (requiredSize: number) {
-            registerParser((value: unknown) => ensureNumberSize({
+            registerParser((value) => ensureNumberSize({
                 requiredSize,
-                value: value as number,
+                value: value,
                 validationType: 'max',
             }));
 
