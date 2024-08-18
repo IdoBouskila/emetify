@@ -1,12 +1,12 @@
 {
-	"name": "@idobouskila/zod-lite",
+	"name": "emetify",
 	"description": "A lite schema validator inspired by Zod",
 	"version": "0.0.0",
 	"author": "Ido Bouskila",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/IdoBouskila/zod-lite"
+		"url": "https://github.com/IdoBouskila/emetify"
 	},
 	"type": "module",
 	"main": "dist/index.cjs",
