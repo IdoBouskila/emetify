@@ -11,8 +11,8 @@ export const throwSizeError = ({ type, validationType, requiredLength }: {
 			: `String must contain at ${ isMinimum ? 'least' : 'most' } ${ String(requiredLength) } character(s)`;
 
 	const error = {
-		message: errorMessage,
 		code: isMinimum ? 'too_small' : 'too_big',
+		message: errorMessage,
 	};
 	
 	throw new Error(JSON.stringify(error));
