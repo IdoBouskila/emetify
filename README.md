@@ -31,5 +31,5 @@ schema.parse({ name: 'Bob', age: '30' });
 
 ## TODO List:
 - [ ] Implement refinements
-- [ ] Add tests for implementation & types
+- [x] Add tests for implementation & types
 - [ ] Add `e.email()`, `e.url()`, `e.uuid()`, `e.date()`, `e.boolean()`, `e.null()`, `e.undefined()`
